@@ -16,8 +16,10 @@
 	<string>48DE1D79-02B2-47AC-9046-25DD6AF3ED6D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Note</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ELC Comment</string>
+	<string>Note</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
