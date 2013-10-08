@@ -3,21 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>iii</string>
+	<string>observerdelegate</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#class name#&gt; (Private)
-&lt;#method#&gt;
-@end</string>
+	<string>- (void)observeValueForKeyPath:(NSString *)keyPath
+                       ofObject:(id)object
+                         change:(NSDictionary *)change
+                        context:(void *)context
+{
+    if ([keyPath isEqualToString:&lt;#string#&gt;])
+    {
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>27493307-0E64-4A11-A5F7-0A1D16532B71</string>
+	<string>513A0EF4-B62D-4449-A162-9A3884DAE49B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ObserverDelegate</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Private Class Interface</string>
+	<string>ObserverDelegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

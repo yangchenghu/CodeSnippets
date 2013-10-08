@@ -3,26 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>register_nib</string>
+	<string>ynoarc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define ReuseIdentifier @""
-    UINib * nib = [UINib nibWithNibName:@"" bundle:nil];
-    [_tableView registerNib:nib forCellReuseIdentifier:ReuseIdentifier];</string>
+	<string>#if __has_feature(objc_arc)
+#error This file must be compiled with none-ARC. Use -fno-objc-arc flag.
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>524E7A76-9BBC-4442-86F2-37DB97C7AC37</string>
+	<string>709FAFA7-5AFD-4EDF-831C-ED9BBBF47BE8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>register nib</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>register nib</string>
+	<string>none-ARC Tip</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

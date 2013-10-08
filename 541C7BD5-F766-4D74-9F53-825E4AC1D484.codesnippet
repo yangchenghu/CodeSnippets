@@ -3,21 +3,43 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>iii</string>
+	<string>y_view</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#class name#&gt; (Private)
-&lt;#method#&gt;
-@end</string>
+	<string>- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>27493307-0E64-4A11-A5F7-0A1D16532B71</string>
+	<string>541C7BD5-F766-4D74-9F53-825E4AC1D484</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>View Appear Methods</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Private Class Interface</string>
+	<string>View Appear Methods</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
