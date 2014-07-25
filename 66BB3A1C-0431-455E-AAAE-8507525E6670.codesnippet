@@ -3,22 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>yarc</string>
+	<string>viewDidAppear</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#if ! __has_feature(objc_arc)
-#error This file must be compiled with ARC. Use -fobjc-arc flag (or convert project to ARC).
-#endif
-</string>
+	<string>- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6178DBB2-2E88-4E4F-AAE4-B25779CCBA33</string>
+	<string>66BB3A1C-0431-455E-AAAE-8507525E6670</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ARC tip</string>
+	<string>viewDidAppear</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

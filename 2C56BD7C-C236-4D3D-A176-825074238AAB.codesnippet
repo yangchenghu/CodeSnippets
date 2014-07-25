@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yshowkeyboard</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+[[NSNotificationCenter defaultCenter] addObserver:self
+                                         selector:@selector(keyboardWillShow:)
+                                             name:UIKeyboardWillShowNotification
+                                           object:nil];
+
+- (void)keyboardWillShow:(NSNotification*)aNotification
+{
+    NSDictionary* info = [aNotification userInfo];
+    
+    CGSize kbSize = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue].size;
+    
+    NSTimeInterval animationDuration;
+    UIViewAnimationCurve animationCurve;
+    
+    [[info objectForKey:UIKeyboardAnimationDurationUserInfoKey] getValue:&amp;animationDuration];
+    [[info objectForKey:UIKeyboardAnimationCurveUserInfoKey] getValue:&amp;animationCurve];
+    
+    UIViewAnimationOptions options = animationCurve &lt;&lt; 16;
+    
+    [UIView animateWithDuration:animationDuration
+                          delay:0.0f
+                        options:options
+                     animations:^
+     {
+         self.constraintInputView2Bottom.constant = kbSize.height;
+         [self.view layoutIfNeeded];
+     }
+                     completion:nil];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2C56BD7C-C236-4D3D-A176-825074238AAB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>showKeyBoard</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
